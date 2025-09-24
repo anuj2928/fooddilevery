@@ -34,7 +34,7 @@ app.use(cors({
     origin:[
   'http://localhost:5173',                // local dev
   'https://feasto-p6y1.onrender.com'      // deployed frontend
-];
+],
     credentials:true
 }))
 app.use(express.json())
