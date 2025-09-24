@@ -31,7 +31,10 @@ app.set("io",io)
 
 const port=process.env.PORT || 5000
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:[
+  'http://localhost:5173',                // local dev
+  'https://feasto-p6y1.onrender.com'      // deployed frontend
+];
     credentials:true
 }))
 app.use(express.json())
